@@ -11,7 +11,7 @@ if( have_posts() ):
 		<?php get_template_part('content', get_post_format()); //Looks for content-aside, content-picture, or content-video  ?>
 
 
-<?php	endwhile;
+<?php endwhile;
 
 endif;
 
