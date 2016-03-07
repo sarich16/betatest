@@ -6,5 +6,6 @@
 	</div> <!-- .container -->
 
 	<?php wp_footer() ?> <!--Gets JScript-->
+	
 	</body>
 </html>
