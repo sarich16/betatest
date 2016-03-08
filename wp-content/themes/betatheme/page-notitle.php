@@ -6,6 +6,9 @@
 
 get_header(); ?>
 
+<div class="row">
+
+	<div class="col-xs-12 col-sm-8">
 <?php 
 
 if( have_posts() ):
@@ -24,5 +27,13 @@ if( have_posts() ):
 endif;
 
 ?>
+
+</div>
+
+<div class="col-xs-12 col-sm-4">
+		<?php dynamic_sidebar('sidebar-2'); ?>
+	</div>
+</div>
+<!--Static method of adding sidebar to static pages-->
 
 <?php get_footer(); ?>
