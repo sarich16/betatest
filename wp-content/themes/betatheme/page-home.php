@@ -2,7 +2,7 @@
 
 <div class="row">
 
-
+		<div class="col-xs-12">
 
 		<div id="awesome-carousel" class="carousel slide" data-ride="carousel">
 
@@ -38,10 +38,10 @@
 
 						while( $lastBlog->have_posts() ): $lastBlog->the_post(); ?>
 							    <div class="item <?php if($count == 0): echo 'active'; endif; ?>">
-							      <?php the_post_thumbnail('medium'); ?>
+							      <?php the_post_thumbnail('full'); ?>
 							      <div class="carousel-caption">
 							      		<?php the_title( sprintf('<h1 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ),'</a></h1>' ); ?>
-										<small><?php the_category(); ?></small>
+										<small><?php the_category(' '); ?></small>
 							      </div>
 							    </div>
 
@@ -78,7 +78,7 @@
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
-
+		</div>
 </div>
 
 <div class="row">
