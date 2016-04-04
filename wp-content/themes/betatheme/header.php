@@ -49,9 +49,12 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-				
 			</div>
 
+		<div class="search-form-container">
+			<?php get_search_form(); ?>
+		</div>
+		
 		</div>
 
 			<!--var_dump(get_custom_header())

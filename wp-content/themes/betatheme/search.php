@@ -1,32 +1,35 @@
 <?php get_header(); ?>
 
+
 <div class="row">
 
 	<div class="col-xs-12 col-sm-8">
 
+	<div class="row">
+		
+	
+
 	<?php 
 
 	if( have_posts() ):
-	
+		
 		while( have_posts() ): the_post(); ?>
+			
+			<?php get_template_part('content', 'search'); ?>
 
-			<p><?php the_content(); ?></p>
-	
-			<h3><?php the_title(); ?></h3>
-	
-			<hr>
-		<?php	endwhile;
+	<?php endwhile;
 
 	endif;
-
+	
 	?>
+	</div>
 
-</div>
-
-<div class="col-xs-12 col-sm-4">
+	</div>
+	
+	<div class="col-xs-12 col-sm-4">
 		<?php get_sidebar(); ?>
 	</div>
 
 </div>
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
